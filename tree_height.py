@@ -41,16 +41,16 @@ def main():
     if file and 'a' not in file:
         try:
             with open(file, 'r') as file_1:
-                b = int(file_1.readline())
+                n = int(file_1.readline())
                 parent = list(map(int,flie_1.readline().split()))
         except FileNotFoundError:
             sys.exit()
     else:
-        b = int(input())
+        n = int(input())
         parent = list(map(int, input().split()))
         
-        if b[0] == "I":
-            b = input()
+        if n[0] == "I":
+            n = input()
             
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
