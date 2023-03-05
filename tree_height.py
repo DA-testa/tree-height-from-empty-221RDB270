@@ -6,7 +6,7 @@ import numpy
 
 
 def compute_height(n, parent):
-    tree = [i: [] for i in range(n)]
+    tree = [[] for i in range(n)]
     # Write this function
     max_height = 0
     
