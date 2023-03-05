@@ -9,7 +9,7 @@ def compute_height(n, parent):
     # Write this function
     max_height = 0
     
-    tree[[] for i in range(n)]
+    tree[i: [] for i in range(n)]
     for i in range(n): 
         if parent[i] == -1:
             root = i  
