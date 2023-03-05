@@ -35,22 +35,22 @@ def main():
     # implement input form keyboard and from files
     file = input()
     
-    if file[0] == "I":
-        file = input()
-        
-    if file and 'a' not in file:
-        try:
-            with open(file, 'r') as file_1:
-                n = int(file_1.readline())
-                parent = list(map(int,flie_1.readline().split()))
-        except FileNotFoundError:
-            sys.exit()
-    else:
+    if "I" in file:
         n = int(input())
         parent = list(map(int, input().split()))
+    if "F" in file:
+        path = "./test/"
+        filen = input()
+        filep = os.path.join(path, filen)
         
-        if n[0] == "I":
-            n = input()
+        
+    if 'a' not in filen:
+        try:
+            with open(filep) as files:
+                n = int(files.readline())
+                parent = list(map(int, files.readline().split()))
+        except FileNotFoundError:
+            sys.exit()
             
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
