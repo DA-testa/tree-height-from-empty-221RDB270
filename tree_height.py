@@ -43,6 +43,8 @@ def main():
             with open(file, 'r') as file_1:
                 b = int(file_1.readline())
                 parent = list(map(int,flie_1.readline().split()))
+        except FileNotFoundError:
+            sys.exit()
     else:
         b = int(input())
         parent = list(map(int, input().split()))
